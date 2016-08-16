@@ -1,0 +1,893 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Imports
+// --------------------------------------------------
+// These are the imports which make up the design of this app.
+// By default each design mode includes these shared imports.
+// App Shared Sass variables belong in app.variables.scss.
+
+@import "../pages/organizations/organizations";
+@import "../pages/login/login";
+@import "../pages/signup/signup";
+@import "../app";
+
+//item
+
+.item {
+    text-align: center;
+    margin-top: 10px;
+    padding-left: 0px;
+}
+
+.item-inner {
+        padding-right: 0px;
+//        border-bottom: $grey2;
+}
+
+.item h2 {
+    font-size: 1.9rem;
+    color: $text-color;
+}
+
+.item p {
+     margin: 0 0 0px;
+}
+
+.itemTech {
+    margin-top: 0px !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    height: 50px;
+}
+
+.decoration_none {
+text-decoration: none !important;
+}
+
+/* need to remove from ionic
+.button.activated{
+    background-color: $class-list;}
+
+.button-secondary.activated{
+    background-color: map-get($colors, secondary) !important;}
+
+.item.activated{
+    background-color: transparent;
+}
+*/
+
+ion-button-effect{
+    position: absolute;
+    z-index: 0;
+    display: block;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: .5;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    pointer-events: none;
+}
+
+/*button.action-sheet-button ion-button-effect{
+    background-color: #000;
+}*/
+
+a.only-click ion-button-effect{
+    background-color: transparent;
+}
+
+button.action-sheet-button ion-button-effect{
+    background-color: #000;
+}
+
+.alert-button{
+color: $black1;
+}
+
+.alert-tappable {
+    font-size: 17px;
+}
+
+.alert-radio[aria-checked=true] {
+    color: $blue6;
+}
+
+.alert-radio[aria-checked=true] .alert-radio-icon:after{
+    border-color: $black1;
+}
+
+
+.toggle-icon:before{
+    background-color: #ccc;
+}
+
+.toggle-inner{
+     background-color: #F9FAFB;
+}
+
+.toggle-checked {
+    background-color: $blue2;
+}
+
+.color{
+ color: $text !important;
+}
+
+.color2{
+ color: $grey4 !important;
+}
+
+
+// text/
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+p {
+    color: $item-ios-paragraph-text-color;
+  }
+
+.textLogin {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.tkts-table{
+    text-align: left;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-decor{
+     text-decoration: none;
+}
+
+.text-input {
+    margin: 0px;
+    text-align: center;
+}
+
+.text-align_center {
+    text-align: center;
+}
+
+.commentText{
+    background: $blue3;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    resize: none;
+    height: 110px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.list{
+    width: 90%;
+    margin: 0 auto;
+ }
+
+.max-width{
+max-width: 450px;}
+
+
+.max-width700{
+max-width: 700px;}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.margin {
+    margin: 0px !important;
+}
+
+.padding {
+    padding: 0px !important;
+}
+
+.padding5 {
+    padding: 5px !important;
+}
+
+.padding-left{
+    padding-left: 0px !important;
+}
+
+.padding-left8{
+    padding-left: 8px !important;
+}
+
+.names{
+    padding-right: 24px !important;
+    padding-left: 58px !important;
+}
+
+.select-list{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.class_name{
+    margin-top: 6px !important;
+}
+
+.height{
+height: 138px;
+}
+
+.indent-bottom{
+margin-bottom: 30px;
+}
+
+
+.alignment-bottom{
+  margin-bottom: 10px;
+}
+
+scroll-content {
+    overflow-y: auto;
+}
+
+.toolbar-content{
+    flex-grow: 5;
+}
+
+.toolbar-background {
+    border-color: rgba(255, 255, 255, 0);
+}
+
+.img{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.img-top{
+    margin-top: 18px;
+}
+
+.margin-bottom3{
+    margin-bottom: 3px;
+}
+
+.subject-ticket{
+     margin-left: 15px;
+}
+
+.subject-create {
+     height: 38px !important;
+}
+
+.subject{
+     background-color:$sherpa_bg;
+}
+
+.class-margin{
+    margin-bottom: 6px !important;
+}
+
+.admin{
+    -webkit-box-orient: vertical;
+    width: 80px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.general-alignment{
+    margin-top: 38px;
+}
+
+.general-alignment2{
+    margin-top: 10px;
+}
+
+.margin-top0{
+    margin-top: 0px !important;
+}
+
+.dashboardRight{
+    margin-right: 0px;
+}
+
+.marginleft{
+    margin-left: 0px;
+}
+
+.container {
+    margin-bottom: 21px;
+    }
+
+.center{
+    text-align: -webkit-center;
+    }
+
+.name{
+    line-height: 1.3;
+    }
+
+.segment-button.segment-activated {
+    color: $text-color;
+    background-color: $segment;
+    font-weight: bold;
+}
+
+.position-button{
+    position: fixed !important;
+    z-index: 3;
+}
+
+.margin-top2{
+    margin-top: 2px !important;
+}
+
+.margin-top21{
+    margin-top: 21px;
+}
+
+.select-icon .select-icon-inner {
+    color: $text-color;
+}
+
+.item-button {
+    font-size: 1.6rem !important;
+    height: 42px;
+}
+
+.padding-right15{
+    padding-right: 15px !important;
+}
+
+.padding-right24{
+    padding-right: 24px !important;
+    padding-left: 72px !important;
+}
+
+.padding-left87{
+    padding-left: 87px !important;
+}
+
+.menu-content-reveal {
+    box-shadow: 0px 0px 0px 0px;
+}
+
+.basic-margin{
+    margin-top: 0px !important;
+}
+
+.margin-top-10{
+    margin-top: -10px;
+}
+
+//color
+.blue1back {
+    background-color: $background !important;
+}
+
+//color
+.blue1 > * {
+    background-color: $background;
+}
+
+.blue2{
+    background-color: $blue2;
+}
+
+.blue3 > * {
+    background-color: $blue3;
+}
+  
+.blue4 {
+    background-color: $blue4;
+}
+
+.grey > * {
+    background-color: $grey;
+}
+
+.grey2 {
+    color: $grey2 !important;
+}
+
+.grey3 {
+    background-color: $grey3 !important;
+}
+
+.grey4 {
+    color: $grey4 !important;
+}
+
+.background-color{
+   background-color: $background-color;
+}
+
+.transparent{
+    background-color: transparent;
+}
+
+.nocolor{
+    color: transparent;
+}
+
+.text-color{
+    color: $text-color;
+}
+
+.imglogo{
+    display: block;
+    margin: auto;
+}
+
+.table{
+    text-align: center;
+}
+
+.table span.box1{
+    background-color: $grey;
+    width: 35%;
+    float: left;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.table span.box2{
+    background-color: $grey;
+    width: 23%;
+    float: left;
+}
+
+.table span.box3{
+    background-color: $grey;
+    width: 23%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.table span.box4{
+    background-color: $blue2;
+    width: 19%;
+    float: right;
+}
+
+.table span.box7{
+    float: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table span.box9{
+    background-color: $grey !important;
+    text-align: left;
+    padding-left: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.space{
+        white-space: nowrap !important;
+       overflow: visible !important;
+}
+
+.overflow{
+       overflow: visible !important;
+}
+
+.space-initial{
+    white-space: initial !important;
+}
+
+.button-fab {
+    color: $text-color;
+}
+
+//button
+
+
+.billable {
+    font-size: 26px;
+    height: 40px;
+    float: left;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+
+.button-icon-only ion-icon {
+    padding: 0 0.2em;
+    
+}
+
+.searchbar-input {
+    color: $text-color;
+    padding-left: 0px;
+    display: flex;
+    background-color: $blue1;
+   }
+
+.searchbar-clear-icon {
+    background-image: url("../../img/close.png");
+}
+
+.ticketImg {
+    height: 0px;
+    width: 66px;
+}
+
+.item:last-child, ion-list > ion-item-sliding:last-child .item {
+    border-bottom: 0px;
+}
+
+ion-list > .item:first-child, ion-list > ion-item-sliding:first-child .item {
+     border-top: 0px solid #dedede; 
+}
+
+//menu
+.ionFont {
+    font-size: 26px;
+    padding-right: 10px;
+     width: 40px;
+    height: 40px;
+    border: 2px solid $grey;
+    border-radius: 100%;
+    float: left;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-top: 2px;
+    text-align: center;
+}
+
+
+.menu-text{
+     line-height: 2.0 !important;
+    font-size: 2.2rem !important; 
+}
+
+.activeBorder {
+    border: 2px solid #88ddfa !important;
+}
+
+.dashborder {
+border-left: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.alert-wrapper {
+    background-color: $text-color;
+}
+
+.close-ticket{
+    background-color: $close-ticket; 
+}
+
+.close-ticket2{
+    font-size: 14px;
+    padding: 7px;
+    margin-top: 14px !important;
+}
+
+.alert-button {
+    font-size: 17px;
+}
+
+.alert-button {
+    text-transform: none;
+}
+
+.alert-title {
+    font-size: 21px;
+}
+
+ion-datetime{
+    max-width: 78%;
+}
+
+//width
+
+.width100{
+    width: 100%;
+}
+
+.width90{
+    width: 90%;
+}
+
+.width80{
+    width: 80%;
+}
+
+.width75{
+    width: 75%;
+}
+
+.width70{
+    width: 70%;
+}
+
+.width65{
+    width: 65%;
+}
+
+.width59{
+    width: 59%;
+}
+
+.width55{
+    width: 55%;
+}
+
+.width50{
+    width: 50%;
+}
+
+.width48{
+    width: 48%;
+}
+
+.width45{
+    width: 45%;
+}
+
+.width38{
+    width: 38%;
+}
+
+.width35{
+    width: 35%;
+}
+
+.width33{
+    width: 33%;
+}
+
+.width30{
+    width: 30%;
+}
+
+.width25{
+    width: 25%;
+}
+
+.width23{
+    width: 23%;
+}
+
+.width21{
+    width: 21%;
+}
+
+.width19{
+    width: 19%;
+}
+
+.width17{
+    width: 17%;
+}
+
+.width10{
+    width: 10%;
+}
+
+//error
+.ng-invalid {
+    border-left: 2px solid $red; /* red */
+}
+
+[required].ng-valid {
+    border-left: 2px solid map-get($colors, secondary); 
+}
+
+div.tooltips {
+    /*position: relative;
+    display: inline;*/
+}
+div.tooltips span {
+    z-index: 9999;
+    position: absolute;
+    /*left: 40px;*/
+    white-space: nowrap;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-width: 140px;
+    color: $red;
+    background: map-get($colors, primary);
+    border: 2px solid $red;
+    height: 33px;
+    line-height: 30px;
+    text-align: center;
+    /*visibility: hidden;*/
+    border-radius: 6px;
+}
+div.tooltips span:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -12px;
+    width: 0; height: 0;
+    border-bottom: 12px solid $red;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+div.tooltips span:after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-bottom: 8px solid map-get($colors, primary);
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.mycontent {
+    background-color: $background-color;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+ion-spinner {
+    * {
+      stroke: $text;
+    }
+
+    &.spinner-circles circle,
+    &.spinner-bubbles circle,
+    &.spinner-dots circle {
+      fill: $text;
+    }
+  }
+
+ .infinite-loading-text
+ {
+    color: $text;
+ }
+
+div.imgloading
+{
+    opacity: 0;
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.toast-error, toast-ok {
+    top: 0;
+    bottom: initial;
+    height: 60px;
+}
+
+.toast-wrapper {
+    top: 10px;
+    bottom: initial;
+    /*background-color: rgba(46,201,92,0.9);*/
+    transform: translateY(100%);
+}
+
+.toast-error .toast-wrapper{
+    background-color: rgba($red2, 0.9);
+}
+
+.toast-ok .toast-wrapper{
+    background-color: rgba(map-get($colors, secondary), 0.9);
+}
+
+.hiddenviz
+{
+    visibility: hidden;
+}
+
+.offline_status 
+{
+position: absolute;
+z-index: 999;
+background-color: red;
+width: 100%;
+text-align: center;
+min-height: 15px;
+}
+
+.ios7style
+{
+   top: 18px;
+}
+
+.datetime-text
+{
+    text-overflow: initial !important;
+}
+
+
+.loading-wrapper1 {
+    color: #fff !important;
+    background: $login;
+    box-shadow: 0px 0px 10px 5px white !important;
+}
+
+.picker-col {
+    padding: 0 0px;
+    }
+
+ion-searchbar {
+    background: $searchbar;
+}
+
+.inst{
+  background-color: $inst;
+}
+
+.show-back-button:after {
+    right: -10px;
+    left: -30px;
+}
+
+.bar-button {
+    z-index: 9;
+}
+
+.alert-title {
+    font-size: 21px;
+    padding-left: 43px;
+    padding-right: 35px;
+}
+
+.alert-wrapper {
+    background-image: url("../../img/sherpaDesk-logo-finalB.png");
+    background-repeat: no-repeat;
+}

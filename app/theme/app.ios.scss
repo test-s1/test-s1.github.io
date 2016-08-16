@@ -1,0 +1,113 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Shared Variables
+// --------------------------------------------------
+// Shared Sass variables go in the app.varialbes.scss file
+@import 'app.variables';
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+// Ionic iOS Sass
+// --------------------------------------------------
+// Custom App variables must be declared before importing Ionic.
+// Ionic will use its default values when a custom variable isn't provided.
+@import "ionic.ios";
+
+
+// App Shared Sass
+// --------------------------------------------------
+// All Sass files that make up this app goes into the app.core.scss file.
+// For simpler CSS overrides, custom app CSS must come after Ionic's CSS.
+@import 'app.core';
+
+
+// App iOS Only Sass
+// --------------------------------------------------
+// CSS that should only apply to the iOS app
+
+
+.buttonTicket{
+    width: 45px;
+    height: 45px;
+}
+
+.button {
+    color: $text-color;
+}
+
+.segment-button{
+      border-color: $background-color;
+      background-color: $text3;
+      color: $blue7;
+}
+
+.button_circle2 {
+    font-size: 2.8em !important;
+}
+
+.button_circle {
+    font-size: 3.8em !important;
+}
+
+.ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*.action-but{
+    padding-left: 0.23em !important;
+}*/
+
+.action-sheet-button{
+      color: $blue2;
+}
+
+.avatarText{
+    line-height: 8px;
+    color: $grey2;
+    font-size: 1.6rem;
+    height: 86px;
+}
+
+.item p {
+    color: $text;
+}
+
+.action-sheet-icon{
+  margin: 0 28px 0 0;
+}
+
+.action-sheet-button span.button-inner {
+  justify-content: flex-start;
+}
+
+.text-input{
+    line-height: 1px;
+}
+
+ion-buttons {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0;
+    -ms-flex: 0;
+    flex: 0;
+    order: 3;
+        margin: 0 1.2rem;
+}
+
+.button-icon-only ion-icon{
+   padding: 0;
+}
+
+.toolbar-title {
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    height: 20px; 
+        text-overflow: initial;
+    }

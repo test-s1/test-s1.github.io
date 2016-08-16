@@ -1,0 +1,13 @@
+<ion-menu id="leftMenu" [content]="content">
+  <ion-content class="menu-bg">
+      <ion-list no-lines>
+          <div *ngFor="let p of pages2" (click)="openPage(p)">
+        <button detail-none ion-item>
+              <h3>{{p.name.slice(0,-4)}}</h3>
+      </button>
+      </div>
+      </ion-list>
+       </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>

@@ -1,24 +1,60 @@
 {
-  "name": "upload-files-github.js",
-  "version": "1.0.0",
-  "description": "Demo that shows how to upload any file on GitHub using Github.js",
-  "main": "main.js",
-  "scripts": {
-    "build": "browserify js/main.js > dist.js"
+  "dependencies": {
+    "@angular/common": "^2.0.0-rc.1",
+    "@angular/compiler": "^2.0.0-rc.1",
+    "@angular/core": "^2.0.0-rc.1",
+    "@angular/http": "^2.0.0-rc.1",
+    "@angular/platform-browser": "^2.0.0-rc.1",
+    "@angular/platform-browser-dynamic": "^2.0.0-rc.1",
+    "@angular/router": "^2.0.0-rc.1",
+    "es6-promise": "3.0.2",
+    "es6-shim": "^0.35.0",
+    "gulp-sass": "2.2.0",
+    "intl": "1.1.0",
+    "ionic-angular": "2.0.0-beta.7",
+    "ionic-native": "1.2.2",
+    "ionicons": "3.0.0",
+    "md5-hex": "^1.1.0",
+    "node-sass": "3.4.2",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
-  "author": {
-    "name": "Aurelio De Rosa",
-    "email": "a.derosa@audero.it",
-    "web": "http://www.audero.it"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/AurelioDeRosa/upload-files-github.js.git"
-  },
-  "license": "CC-BY-4.0",
   "devDependencies": {
-    "browserify": "^11.2.0",
-    "github-api": "^0.10.6",
-    "uglify-js": "^2.5.0"
-  }
+    "del": "2.2.0",
+    "gulp": "3.9.1",
+    "gulp-angular-embed-templates": "^2.2.0",
+    "gulp-watch": "4.3.5",
+    "ionic-gulp-browserify-typescript": "^1.0.0",
+    "ionic-gulp-fonts-copy": "^1.0.0",
+    "ionic-gulp-html-copy": "^1.0.0",
+    "ionic-gulp-sass-build": "^1.0.0",
+    "ionic-gulp-scripts-copy": "^2.0.0",
+    "run-sequence": "1.1.5"
+  },
+  "name": "SherpaDesk",
+  "description": "SherpaDesk",
+  "cordovaPlugins": [
+    "cordova-plugin-device",
+    "cordova-plugin-whitelist",
+    "cordova-plugin-statusbar",
+    "ionic-plugin-keyboard",
+    "cordova-plugin-network-information",
+    "cordova-plugin-inappbrowser",
+    "de.appplant.cordova.plugin.local-notification",
+    {
+      "variables": {
+        "URL_SCHEME": "sherpadesk"
+      },
+      "locator": "cordova-plugin-customurlscheme",
+      "id": "cordova-plugin-customurlscheme"
+    },
+    "cordova-plugin-app-preferences",
+    "cordova-plugin-background-mode",
+    "cordova-plugin-app-event"
+  ],
+  "cordovaPlatforms": [
+    "ios",
+    "android"
+  ]
 }

@@ -1,0 +1,34 @@
+<ion-navbar *navbar>
+    <button menuToggle><ion-icon name="menu"></ion-icon></button>
+  <ion-title>Login</ion-title>
+</ion-navbar>
+<ion-content padding class="login">
+  <div class="list max-width">
+      <a title="Support Portal"><img class="imglogo img-padding" src="img/logo.png"></a>
+      <form #loginForm="ngForm" novalidate>
+  
+      <div class="tooltips">
+          <input class="width100 blue3 subject-create commentText" type="email" placeholder="email" ngControl="email" #username="ngForm" required pattern="^[^@\s]+@[^@\s]+(\.[^@\s]+)+$"/>        
+          <span *ngIf="username.dirty && !username.valid">Valid Email is required</span></div>
+          <br>
+      <div class="tooltips">
+          <input class="width100 blue3 subject-create commentText" placeholder="password" ngControl="password" type="password" #password="ngForm" required/>
+          <span *ngIf="password.dirty && !password.valid">Password is required</span></div>
+        <br>
+          <button class="login-margin"
+                    type="submit" block secondary>Login</button>
+                </form><br>
+          <template [ngIf]="is_sd">
+          <div>
+          <ul class="googleStripes">
+        <li></li><li></li><li></li><li></li>
+      </ul>
+                    </div>
+      <!--form ngNoForm method="POST" [action]="google_action" #googleForm-->
+              <button class="login-margin text-google itemTech grey3 itemTech2" (click)="onGoogleSignin()" block light><span>Sign in with&nbsp;<big>Google</big></span></button>
+              <!--/form-->
+          <br>
+  <button block dark class="login-margin">Create New Account</button>
+  </template>
+    </div>
+</ion-content>
